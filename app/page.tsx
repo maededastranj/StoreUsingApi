@@ -7,7 +7,7 @@ import { useProductStore } from "@/store/productStore";
 export default function HomePage() {
   const { filteredProducts, fetchProducts, filterByCategory, filterBySearch, filterByPriceRange, addToBasket, basket } = useProductStore();
   const [categories, setCategories] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState(""); // جستجو
+  const [searchQuery, setSearchQuery] = useState(""); 
   const router = useRouter();
 
   useEffect(() => {
